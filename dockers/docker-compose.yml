@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  springboot_3.1.11:
+  springboot_3.1.1:
     image: ${IMAGE_NAME}
     build:
       context: .
