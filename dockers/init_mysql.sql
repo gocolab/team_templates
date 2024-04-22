@@ -1,8 +1,8 @@
 -- Create a new database
-CREATE DATABASE IF NOT EXISTS spring_mysql;
+CREATE DATABASE IF NOT EXISTS cocolang;
 
 -- Use the created database
-USE spring_mysql;
+USE cocolang;
 
 -- Create a new table
 
