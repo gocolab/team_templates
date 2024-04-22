@@ -9,7 +9,10 @@
 #### CLI with Dockerfile and compose.xml : duration 150.4s
 ```
 # --project-name is docker container name
-~$ docker-compose --project-name spring_mysql up -d --build
+~$ docker-compose --project-name team_fastapi_spring up -d --build
+-----------
+~$ docker-compose build --no-cache
+~$ docker-compose --project-name team_fastapi_spring up -d
 ```
 
 #### setup extionsion of vscode
