@@ -27,7 +27,7 @@ WORKDIR /apps/${APP_DIR_NAME_FASTAPI}
 
 RUN pip install --no-cache-dir -r ./requirements.txt
 
-RUN rm -rf .git
+# RUN rm -rf .git
 
 # setup springboots
 WORKDIR /apps
