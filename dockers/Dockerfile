@@ -23,9 +23,11 @@ ARG APP_DIR_NAME_FASTAPI
 RUN git clone -b data_engineers https://github.com/gocolab/co_templates ${APP_DIR_NAME_FASTAPI}
 
 # Changes the working directory to /apps/${REPO_NAME}. This uses the variable to dynamically set the directory path.
-WORKDIR /apps/${APP_DIR_NAME_FASTAPI}
+WORKDIR /apps/${APP_DIR_NAME_FASTAPI}/app
 
 RUN pip install --no-cache-dir -r ./requirements.txt
+
+WORKDIR /apps/${APP_DIR_NAME_FASTAPI}
 
 # RUN rm -rf .git
 
