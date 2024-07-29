@@ -7,17 +7,23 @@
 - mongo:7
 - Fastapi(0.110)
 
-#### CLI with Dockerfile and compose.xml : duration 150.4s
-```
-# --project-name is docker container name
-~$ docker-compose --project-name team_fastapi_spring up -d --build
------------
-~$ docker-compose build --no-cache
-~$ docker-compose --project-name team_fastapi_spring up -d
-```
-
 #### setup extionsion of vscode
 - Gradle for Java
 - SpringBoot Extension Pack
-#### samples
-- [src\main\java\com\example\co_templates\CoTemplatesApplication.java](src\main\java\com\example\co_templates\CoTemplatesApplication.java)
+
+#### connection between docker containers
+    ports:
+      - 8888:8888  -> jupyter
+      - 8000:8000  -> fastapi
+      - 8080:8080  -> springboot
+  db_mysql_8_202402051308:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: cocolang
+      MYSQL_LOWER_CASE_TABLE_NAMES: 1      
+      MYSQL_DATABASE: cocolang
+      MYSQL_USER: cocolang
+      MYSQL_PASSWORD: cocolang
+    ports:
+      - "3306:3306"  
