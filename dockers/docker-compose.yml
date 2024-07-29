@@ -23,7 +23,7 @@ services:
       - 8888:8888
       - 8000:8000
       - 8080:8080
-  db_mysql_8:
+  db_mysql_8_202402051308:
     image: mysql:8
     restart: always
     environment:
