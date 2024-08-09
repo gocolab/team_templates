@@ -16,12 +16,12 @@
   - 8888:8888  -> jupyter
   - 8000:8000  -> fastapi
   - 8080:8080  -> springboot
-- db_mysql_8_202402051308:
-  - MYSQL_ROOT_PASSWORD: cocolang
+- db_mysql_8:
+  - MYSQL_ROOT_PASSWORD: cocolabhub
   - MYSQL_LOWER_CASE_TABLE_NAMES: 1      
-  - MYSQL_DATABASE: cocolang
-  - MYSQL_USER: cocolang
-  - MYSQL_PASSWORD: cocolang
+  - MYSQL_DATABASE: cocolabhub
+  - MYSQL_USER: cocolabhub
+  - MYSQL_PASSWORD: cocolabhub
   - "3306:3306"  
-- db_mongodb_7_202402051308:
+- db_mongodb_7:
   - 27017:27017   
