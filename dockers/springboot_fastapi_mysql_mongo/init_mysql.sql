@@ -1,8 +1,8 @@
 -- Create a new database
-CREATE DATABASE IF NOT EXISTS cocolang;
+CREATE DATABASE IF NOT EXISTS cocolabhub;
 
 -- Use the created database
-USE cocolang;
+USE cocolabhub;
 
 -- Create a new table
 
